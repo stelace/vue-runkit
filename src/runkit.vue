@@ -3,10 +3,8 @@
 	</div>
 </template>
 <script>
-if (!('RunKit' in window) && __DEV__)
+if (!('RunKit' in window) && __DEV__ === true)
 	console.warn('consider add <script src="https://embed.runkit.com"><\/script> in html\nthis message won\'t show in production build(min.js version)')
-
-import axios from 'axios'
 
 export default {
 	props: {
